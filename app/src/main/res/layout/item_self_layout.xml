@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_lay"
+            style="@style/InnerStyle">
+
+            <TextView
+                android:id="@+id/left_tip"
+                style="@style/PersonalTextStyle" />
+
+            <TextView
+                android:id="@+id/right_content"
+                style="@style/PersonalRightTextStyle"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:id="@+id/right_layout"
+                style="@style/PersonalRightTextStyle"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/cb_boy"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_check_box"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:text="男"
+                    android:textColor="@color/gray_7f7f7f"
+                    android:textSize="@dimen/sp_13" />
+
+                <CheckBox
+                    android:id="@+id/cb_gril"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_check_box"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:text="女"
+                    android:textColor="@color/gray_7f7f7f"
+                    android:textSize="@dimen/sp_13" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/common_longline"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10" />
+
+    </LinearLayout>
+</layout>

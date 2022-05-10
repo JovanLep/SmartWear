@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <com.lespayne.base.view.TitleView
+            android:id="@+id/layout_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/layout_input"
+            style="@style/LoginLayoutStyle"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_110"
+            android:layout_marginRight="@dimen/dp_35">
+
+            <com.lespayne.base.view.AutoClearEditText
+                android:id="@+id/login_user_edit"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:background="@android:color/white"
+                android:hint="@string/login_username_hint"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/gray_333333"
+                android:textColorHint="@color/gray_b2b2b2"
+                android:textSize="@dimen/sp_14" />
+
+            <View style="@style/PersonalLongLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="center_vertical">
+
+                <com.lespayne.base.view.AutoClearEditText
+                    android:id="@+id/login_pass_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_toStartOf="@+id/isShowPassword"
+                    android:background="@android:color/white"
+                    android:hint="@string/login_pwd_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/gray_333333"
+                    android:textColorHint="@color/gray_b2b2b2"
+                    android:textSize="@dimen/sp_14" />
+
+                <ToggleButton
+                    android:id="@+id/isShowPassword"
+                    android:layout_width="18dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:background="@drawable/selector_toggle"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View style="@style/PersonalLongLine" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/login_pro"
+            android:layout_width="@dimen/dp_54"
+            android:layout_height="@dimen/dp_12"
+            android:layout_below="@id/layout_input"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:indeterminateOnly="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/activity_login"
+            style="@style/common_row_btn"
+            android:layout_below="@id/layout_input"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_35"
+            android:gravity="center"
+            android:textColor="@color/gray_333333"
+            android:text="@string/login_title"
+            android:textSize="@dimen/sp_14" />
+
+
+        <TextView
+            android:id="@+id/login_to_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_below="@id/activity_login"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="没有账号，前去注册~"
+            android:textSize="@dimen/sp_11" />
+
+    </RelativeLayout>
+</layout>

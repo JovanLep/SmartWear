@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_333333">#333333</color>
+    <color name="gray_f5f5f5">#f5f5f5</color>
+    <color name="gray_666666">#666666</color>
+    <color name="gray_999999">#999999</color>
+    <color name="gray_b2b2b2">#b2b2b2</color>
+    <color name="red_d21034">#d21034</color>
+    <color name="gray_ebebeb">#ebebeb</color>
+    <color name="gray_eaeaea">#eaeaea</color>
+    <color name="gray_e5e5e5">#e5e5e5</color>
+    <color name="gray_bfbfbf">#bfbfbf</color>
+    <color name="gray_f2f2f2">#f2f2f2</color>
+    <color name="gray_7f7f7f">#7f7f7f</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="dark">#803cbcb7</color>
+    <color name="light">#800de6e8</color>
+
+    <color name="green">#00FF00</color>
+    <color name="green1">#E685F685</color>
+    <color name="green2">#80CBF7CB</color>
+    <color name="blue">#EE9A00</color>
+    <color name="red">#EE0000</color>
+    <color name="red_fa434e">#FA434E</color>
+    <color name="blue_00bfff">#00BFFF</color>
+
+    <integer-array name="gradient_arc_color">
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/red</item>
+    </integer-array>
+
+
+    <color name="y_FFC107">#FFC107</color>
+    <color name="red_E4999F">#E4999F</color>
+</resources>

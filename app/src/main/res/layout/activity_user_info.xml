@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f5f5f5"
+        android:orientation="vertical">
+
+        <com.lespayne.base.view.TitleView
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/dp_20"
+            android:src="@drawable/ic_default" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/self_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_8"
+            android:background="@drawable/conner_white_bg_shape" />
+    </LinearLayout>
+</layout>

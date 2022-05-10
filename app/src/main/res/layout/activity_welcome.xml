@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@drawable/icon_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.WelcomeActivity">
+
+        <TextView
+            android:background="@drawable/white_bg_gary"
+            android:layout_margin="@dimen/dp_20"
+            android:paddingVertical="@dimen/dp_3"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>

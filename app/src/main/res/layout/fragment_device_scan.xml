@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_300"
+    android:layout_height="@dimen/dp_300"
+    android:background="@drawable/shape_load_bg"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/lv_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp_60"
+        android:scrollbarStyle="outsideOverlay"
+        tools:listitem="@layout/item_device_list" />
+
+    <TextView
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/trans"
+        android:gravity="center"
+        android:text="设备连接"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18" />
+
+    <Button
+        android:id="@+id/action_cancel"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_36"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_230"
+        android:background="@drawable/btn_action_bg"
+        android:gravity="center"
+        android:text="扫描"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</RelativeLayout>
